@@ -10,6 +10,7 @@ from pynput import keyboard  # Importing the keyboard module from pynput
 import pyautogui  # Importing the pyautogui module for simulating keyboard actions
 import time  # Importing time module for adding delays
 
+
 class KeyboardMacro:
     def __init__(self):
         self.recorded_keys = []  # Initialize an empty list to store keystrokes
@@ -34,6 +35,7 @@ class KeyboardMacro:
             else:
                 pyautogui.press(key.char)  # Simulate character key press
             time.sleep(0.1)  # Short delay between keystrokes for realism
+
 
 # Example usage of the KeyboardMacro class
 if __name__ == "__main__":
